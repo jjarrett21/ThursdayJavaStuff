@@ -1,4 +1,4 @@
-public  class NewStudent implements Comparable {
+public class NewStudent implements Comparable {
     private String studentName;
     private int rollNo;
     private int studentAge;
@@ -34,8 +34,8 @@ public  class NewStudent implements Comparable {
     }
 
     @Override
-    public int comprareTo(NewStudent comparestu) {
-        int compareage=((NewStudent)comparestu).getStudentAge();
+    public int compareTo(Object nStudent) {
+        int compareage=((NewStudent)nStudent).getStudentAge();
 
         return this.studentAge-compareage;
     }
