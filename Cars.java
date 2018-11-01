@@ -36,7 +36,7 @@ public class Cars {
         }
 
         // Comparator for sorting list by make
-        public static Comparator<Cars> makeSort = new Comparator<Cars>() {
+        public static Comparator<Cars> makeSort = new Comparator<>() {
             public int compare(Cars c1, Cars c2) {
                 String carMake1 = c1.getMake().toUpperCase();
                 String carMake2 = c2.getMake().toUpperCase();
@@ -47,7 +47,7 @@ public class Cars {
         }};
 
         // Sorting by Model 
-        public static Comparator<Cars> modelSort = new Comparator<Cars>() {
+        public static Comparator<Cars> modelSort = new Comparator<>() {
             public int compare(Cars c1, Cars c2) {
                 String carModel1 = c1.getModel().toUpperCase();
                 String carModel2 = c2.getModel().toUpperCase();
@@ -58,7 +58,7 @@ public class Cars {
         }};
 
         // Sorting by year
-        public static Comparator<Cars> yearSort = new Comparator<Cars>() {
+        public static Comparator<Cars> yearSort = new Comparator<>() {
           public int compare(Cars c1, Cars c2) {
                 int carYear1 = c1.getYear();
                 int carYear2 = c2.getYear();
