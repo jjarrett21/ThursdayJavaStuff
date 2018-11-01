@@ -38,6 +38,8 @@ public class NewStudent implements Comparable {
         int compareage=((NewStudent)nStudent).getStudentAge();
 
         return this.studentAge-compareage;
+        /* For Descending order 
+        return compareage-this.studentAge; */
     }
 
     @Override
