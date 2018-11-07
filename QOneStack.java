@@ -63,13 +63,14 @@ public class QOneStack {
         enQueue(q, 1);
         enQueue(q, 2);
         enQueue(q, 3);
+        System.out.println("Current Queue: " + q);
 
         // Dequeue items 
         System.out.println(deQueue(q) + " ");
         System.out.println(deQueue(q) + " ");
         System.out.println(deQueue(q) + " ");
 
-        
+
     }
 }
 
